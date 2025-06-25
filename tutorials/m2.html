@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>M2 Edge Tutorial – CubeBase</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.cubing.net/v0/css/@cubing/icons/css">
+</head>
+<body>
+  <header>
+    <h1><span class="cubing-icon event-333bf"></span> M2 Edge Tutorial</h1>
+    <nav>
+      <a href="../index.html">← Back to Wiki</a>
+    </nav>
+  </header>
+
+  <main>
+    <article>
+      <section>
+        <h2>What is M2?</h2>
+        <p><strong>M2</strong> is a method used in 3BLD to solve the 12 edge pieces using a specific algorithm that targets the middle slice (the "M-slice"). It’s paired with a fixed buffer, typically <strong>DF (U in Speffz)</strong>.</p>
+      </section>
+
+      <section>
+        <h2>Why use M2?</h2>
+        <ul>
+          <li>It’s efficient and consistent for edge solving</li>
+          <li>All targets can be handled with simple setup moves + a core M2 algorithm</li>
+          <li>Pairs well with 3-style or Old Pochmann for corners</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>M2 Algorithm</h2>
+        <p>The main algorithm used in M2 is M2 (swapping algorithm)</p>
+      </section>
+
+      <section>
+        <h2>Buffer and Target</h2>
+        <p>The buffer used in M2 is typically the <strong>U sticker in Speffz</strong>. The goal is to cycle the sticker at DF with a target edge, one at a time.</p>
+      </section>
+
+      <section>
+        <h2>Execution Strategy</h2>
+        <ol>
+          <li>Memo your edge letter pairs</li>
+          <li>For each target:</li>
+          <ul>
+            <li>Do setup → <code>M2</code> → undo setup</li>
+          </ul>
+        </ol>
+      </section>
+
+      <section>
+        <h2>Example Setup Moves</h2>
+        <p>Here are some setup moves from the buffer U to various edge stickers. This assumes sticker-level targeting (not piece) in Speffz.</p>
+        <ul>
+          <li><strong>A:</strong> M2 (no setup moves)</li>
+          <li><strong>UL:</strong> <code>U2</code> ... <code>M2</code> ... <code>U2</code></li>
+          <li><strong>UR:</strong> <code>U'</code> ... <code>M2</code> ... <code>U</code></li>
+          <li><strong>FR:</strong> <code>R</code> ... <code>M2</code> ... <code>R'</code></li>
+          <li><strong>FL:</strong> <code>L'</code> ... <code>M2</code> ... <code>L</code></li>
+          <li><strong>BD:</strong> <code>D2</code> ... <code>M2</code> ... <code>D2</code></li>
+          <!-- Add more as needed -->
+        </ul>
+        <p><em>Tip: Make a chart or flashcards to drill these setups!</em></p>
+      </section>
+
+      <section>
+        <h2>Special Cases</h2>
+        <ul>
+          <li><strong>Flipped buffer:</strong> Skip, it's solved.</li>
+          <li><strong>Parity (odd number of targets):</strong> Add an extra letter to balance it out (e.g., use a dead sticker).</li>
+        </ul>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <p>© 2025 Cubiepedia. <span class="cubing-icon event-333bf"></span> Stay M2 consistent!</p>
+  </footer>
+</body>
+</html>
