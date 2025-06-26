@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BLD Tutorial – CubeBase</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.cubing.net/v0/css/@cubing/icons/css">
+</head>
+<body>
+  <header>
+    <h1><span class="cubing-icon event-333bf"></span> Blindfolded Solving Tutorial</h1>
+    <nav>
+      <a href="../../index.html">← Back to Wiki</a>
+    </nav>
+  </header>
+
+  <main>
+    <article>
+      <section>
+        <h2>Getting Started</h2>
+        <p>Solving a Rubik's Cube without seeing it may sound extreme—but it’s not only possible, it’s fun! You’ll just need to learn a few techniques, a couple of algorithms, and how to memorize piece positions.</p>
+        <p>Requirements:</p>
+        <ul>
+          <li>Know how to solve a cube normally</li>
+          <li>Learn 3 algorithms</li>
+          <li>Be ready to memorize 20–30 letters per solve</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Step-by-Step Plan</h2>
+        <ol>
+          <li>Figure out where each piece should go</li>
+          <li>Move one piece at a time using swap algorithms</li>
+          <li>Use setup moves to bring the right piece into position</li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>Edge Solving</h2>
+        <p>Keep white on top and green in front. You’ll swap pieces using this algorithm:</p>
+        <p><strong>Edge Swap Algorithm:</strong></p>
+        <pre><code>R U R' U' R' F R2 U' R' U' R U R' F'</code></pre>
+        <p>This swaps UR (buffer) with UL (target).</p>
+
+        <h3>Setup Examples</h3>
+        <ul>
+          <li>To swap with FL: <code>L'</code> → <em>algorithm</em> → <code>L</code></li>
+          <li>To swap with LF: <code>Dw' L</code> → <em>algorithm</em> → <code>L' Dw</code></li>
+        </ul>
+
+        <p><strong>Important:</strong> Focus on the buffer (UR) to determine what to swap. Incorrect targets = flipped pieces.</p>
+
+        <h3>Setup Tips</h3>
+        <ul>
+          <li>Don’t use R, U, F, B for setups</li>
+          <li>Only use L, Lw, Dw</li>
+          <li>D face: D + L2 setup</li>
+          <li>E layer: Dw + L or L'</li>
+          <li>M layer: Lw to D or U face, then continue</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Corner Solving</h2>
+        <p>Same orientation: white on top, green in front.</p>
+        <p><strong>Corner Swap Algorithm:</strong></p>
+        <pre><code>R U' R' U' R U R' F' R U R' U' R' F R</code></pre>
+        <p>This swaps LBU (buffer) with DFR (target).</p>
+
+        <h3>Setup Examples</h3>
+        <ul>
+          <li>To swap with FRU: <code>R'</code> → <em>algorithm</em> → <code>R</code></li>
+          <li>To swap with UFR: <code>F2 D</code> → <em>algorithm</em> → <code>D' F2</code></li>
+        </ul>
+
+        <h3>Setup Tips</h3>
+        <ul>
+          <li>Only use D, F, R for setup</li>
+          <li>Place the target at DFR using 1–2 moves max</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Memorization</h2>
+        <p>Use a lettering system like Speffz. Assign each sticker a letter, and memorize a sequence of letters representing the target stickers of each swap.</p>
+
+        <h3>Cycle Example (Edges)</h3>
+        <ol>
+          <li>UR (buffer) → Q</li>
+          <li>Q → U</li>
+          <li>U → S</li>
+          <li>S → R (back to buffer)</li>
+        </ol>
+        <p>Continue with new cycles or flipped edges if needed.</p>
+
+        <h3>Flipped Edges</h3>
+        <p>Choose either sticker and memorize its position. Example: D → E.</p>
+
+        <h3>Corner Memorization</h3>
+        <p>Same idea as edges. Track the piece sticker-by-sticker and form pairs.</p>
+
+        <h3>Visualization Tips</h3>
+        <p>Turn your letter pairs into images or a story. For example:</p>
+        <pre><code>QU → "Quick", SR → "Star", NX → "Nexus", etc.</code></pre>
+      </section>
+
+      <section>
+        <h2>Parity</h2>
+        <p>If both edge and corner memorization have an odd number of letters, you’ll need to run a parity algorithm before solving corners.</p>
+
+        <h3>Parity Algorithm:</h3>
+        <pre><code>R U' R' U' R U R D R' U' R D' R' U2 R' U'</code></pre>
+      </section>
+
+      <section>
+        <h2>Solving Process Summary</h2>
+        <ol>
+          <li>Edge memo → solve edges</li>
+          <li>Run parity if needed</li>
+          <li>Corner memo → solve corners</li>
+          <li>Each letter: setup → algorithm → undo</li>
+        </ol>
+        <p>Don’t think about cycles while solving. Follow your memorized letters and the cube will be solved.</p>
+      </section>
+
+      <section>
+        <h2>Example Solve</h2>
+        <p><strong>Scramble:</strong></p>
+        <pre><code>B2 R2 B2 L U2 R' B2 R2 B2 R' U' B' F L' B D R B2 D B' D' U</code></pre>
+
+        <h3>Edges:</h3>
+        <pre><code>QU SR NX IV PR DE</code></pre>
+
+        <h3>Corners:</h3>
+        <pre><code>MW QX MD UI VP</code></pre>
+
+        <p>No parity needed (even + even).</p>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <p>© 2025 Cubiepedia. <span class="cubing-icon event-333bf"></span> Blindfolded mastery is closer than you think!</p>
+  </footer>
+</body>
+</html>

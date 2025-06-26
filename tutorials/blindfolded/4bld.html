@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>4BLD Tutorial – Cubiepedia</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.cubing.net/v0/css/@cubing/icons/css">
+</head>
+<body>
+  <header>
+    <h1><span class="cubing-icon event-444bf"></span> 4BLD U2/R2/OP Tutorial</h1>
+    <nav>
+      <a href="../../index.html">← Back to Wiki</a>
+    </nav>
+  </header>
+
+  <main>
+    <article>
+       <section>
+        <h2>Getting Started</h2>
+        <p>Solving a 4x4x4 puzzle blindfolded is probably easier than you think, if you already know how to solve a 3x3x3 blindfolded. You’ll need to memorize around 25 letter pairs, which you can efficiently do using Roman Rooms. There aren't much algorithms to learn, enjoy and good luck!</p>
+        <br>
+        <p>Requirements:</p>
+        <li>M2 for edges</li>
+        <li>OP for corners</li>
+        <li>Time and dedication</li>
+      </section>
+      <section>
+        <h2>Swapping Algorithms</h2>
+        
+          <li><strong>Center:</strong> <code>U2</code></li>
+          <li><strong>Wing:</strong> <code>r2</code></li>
+        
+      </section>
+
+      <section>
+        <h2>Swapping Rules</h2>
+        
+          <li>For most cases, use: <strong>setup + swap + undo setup</strong></li>
+          <li>For special cases, use only the algorithm shown</li>
+          <li><strong>Centers:</strong> If B or D is second in a letter pair, swap it to the other</li>
+          <li><strong>Wings:</strong> If I or S is second in a letter pair, swap it to the other</li>
+        
+      </section>
+
+      <section>
+        <h2>Parity Algorithms</h2>
+        
+          <li><strong>Center:</strong> <code>U2</code></li>
+          <li><strong>Wing:</strong> <code>r' U2 r U2 r' U2 x r U2 r U2 r U2 r2 U2 x' r' U2</code></li>
+          <li><strong>Corner:</strong> <code>U2 R U R' U' (r2 U2 r2 Uw2 r2 Uw2) U' R U' R' U2</code></li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Parity Rules</h2>
+        
+          <li>If the number of targets (letters) is <strong>odd</strong> for a step, do the parity algorithm after solving it</li>
+          <li>Parity is <strong>independent</strong> per step (centers, wings, corners)</li>
+          <li><strong>Execution order:</strong> Centers → Wings → Corners (important to avoid breaking pieces)</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Center Setup Moves</h2>
+        
+          <li><strong>A:</strong> buffer</li>
+          <li><strong>B:</strong> (special) <code>Rw' F' U r U' l' U r' U' l F Rw U2</code></li>
+          <li><strong>C:</strong> none</li>
+          <li><strong>D:</strong> (special) <code>Lw F' r U l' U' r' U l U' F Lw' U2</code></li>
+          <li><strong>E:</strong> <code>r u r'</code></li>
+          <li><strong>F:</strong> <code>y' u r' u' r</code></li>
+          <li><strong>G:</strong> <code>r' d r</code></li>
+          <li><strong>H:</strong> <code>y' r d2 r'</code></li>
+          <li><strong>I:</strong> <code>r u2 r'</code></li>
+          <li><strong>J:</strong> <code>y' r' u r</code></li>
+          <li><strong>K:</strong> <code>d' r' d r</code></li>
+          <li><strong>L:</strong> <code>y' r d r'</code></li>
+          <li><strong>M:</strong> <code>r u' r'</code></li>
+          <li><strong>N:</strong> <code>y' r' u2 r</code></li>
+          <li><strong>O:</strong> <code>r' d' r</code></li>
+          <li><strong>P:</strong> <code>y' d' r d r'</code></li>
+          <li><strong>Q:</strong> <code>u r u' r'</code></li>
+          <li><strong>R:</strong> <code>y' r' u' r</code></li>
+          <li><strong>S:</strong> <code>r' d2 r</code></li>
+          <li><strong>T:</strong> <code>y' r d' r'</code></li>
+          <li><strong>U:</strong> (special) <code>D [swap to V] D'</code></li>
+          <li><strong>V:</strong> (special) <code>Lw' U' r2 U' l U r2 U' l' U2 Lw U2</code></li>
+          <li><strong>W:</strong> (special) <code>D' [swap to V] D</code></li>
+          <li><strong>X:</strong> (special) <code>D2 [swap to V] D2</code></li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Wing Setup Moves</h2>
+        
+          <li><strong>A:</strong> none</li>
+          <li><strong>B:</strong> <code>R U R' U'</code></li>
+          <li><strong>C:</strong> (special) <code>l' [swap to Q] l</code></li>
+          <li><strong>D:</strong> <code>L' U' L U</code></li>
+          <li><strong>E:</strong> <code>B L' B'</code></li>
+          <li><strong>F:</strong> <code>B L2 B'</code></li>
+          <li><strong>G:</strong> <code>B L B'</code></li>
+          <li><strong>H:</strong> <code>L B L' B'</code></li>
+          <li><strong>I:</strong> (special) <code>D r U R2 U' r' U R2 U' D' r2</code></li>
+          <li><strong>J:</strong> <code>U R U'</code></li>
+          <li><strong>K:</strong> (special) <code>l2 [swap to Q] l2</code></li>
+          <li><strong>L:</strong> <code>U' L' U</code></li>
+          <li><strong>M:</strong> <code>B' R B</code></li>
+          <li><strong>N:</strong> <code>R' B' R B</code></li>
+          <li><strong>O:</strong> <code>B' R' B</code></li>
+          <li><strong>P:</strong> <code>B' R2 B</code></li>
+          <li><strong>Q:</strong> (special) <code>U B' R U' B (r2) B' U R' B U'</code></li>
+          <li><strong>R:</strong> <code>U' L U</code></li>
+          <li><strong>S:</strong> (special) <code>r2 D U R2 U' r U R2 U' r' D'</code></li>
+          <li><strong>T:</strong> <code>U R' U'</code></li>
+          <li><strong>U:</strong> buffer</li>
+          <li><strong>V:</strong> <code>U R2 U'</code></li>
+          <li><strong>W:</strong> (special) <code>l [swap to Q] l'</code></li>
+          <li><strong>X:</strong> <code>U' L2 U</code></li>
+        </ul>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <p>© 2025 Cubiepedia. <span class="cubing-icon event-444bf"></span> Stay focused and cube on!</p>
+  </footer>
+</body>
+</html>
